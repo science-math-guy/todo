@@ -7,7 +7,6 @@ export default function Home() {
         let fileName = window.prompt("Name of the file:");
         setFiles(arr => [...arr,`${fileName}`])
     };
-//   const files = ["bot 1", "bot 2"];
   return (
     <main className="h-screen bg-gray-700">
       <nav className="w-100 py-5 px-20 flex flex-row justify-between items-center bg-gray-800 text-white font-Poppins">
@@ -34,7 +33,7 @@ export default function Home() {
             onClick={newFile}
             className="h-36 w-36 border rounded-lg border-dashed font-light border-gray-400"
           >
-            New file
+            New Task
           </button>
           <div className="flex flex-row space-x-5">
             {files.map((file) => {
